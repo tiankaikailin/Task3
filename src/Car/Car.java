@@ -29,7 +29,12 @@ public class Car extends Drive{
 		return "Car [brand=" + brand + ", id=" + id + "]";
 	}
 	
-	public void price(){
-		System.out.println("I'm a " + brand + " Car");
+	@Override
+	public void brand(){
+		System.out.println("A " + brand + " Car");
+	}
+	@Override
+	public void type(){
+		System.out.println("I'm a Car");
 	}
 }

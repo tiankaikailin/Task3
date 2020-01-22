@@ -6,10 +6,12 @@ public class Test {
 		// TODO Auto-generated method stub
 		Drive d;
 		d = new Car("BWM","#1");
-		d.price();
+		d.brand();
+		d.type();
 		
 		Drive r;
-		d = new Car("JinLong","#2");
-		d.price();
+		r = new Car("JinLong","#2");
+		r.brand();
+		r.type();
 	}
 }

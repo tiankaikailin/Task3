@@ -29,8 +29,13 @@ public class Bus extends Drive{
 		return "Bus [brand=" + brand + ", id=" + id + "]";
 	}  
 	
-	public void price(){
-		System.out.println("I'm a " + brand + " Bus");
+	@Override
+	public void brand(){
+		System.out.println("A " + brand + " Bus");
+	}
+	@Override
+	public void type(){
+		System.out.println("I'm a Bus");
 	}
 	
 }

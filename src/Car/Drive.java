@@ -1,36 +1,48 @@
 package Car;
 
-public abstract class Drive {
+public class Drive {
 	private String brand; 
 	private String id;  
  
- 
-	public Drive() {}
- 
-	public Drive(String brand,String id)
-	{
-		this.brand=brand;
-		this.id=id;
-	}	
 	
 	
-	public void setBrand(String brand) {
-		this.brand=brand; 
+	public Drive(String brand, String id) {
+		super();
+		this.brand = brand;
+		this.id = id;
 	}
-	
+
+	public Drive() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getBrand() {
-		return this.brand;
+		return brand;
 	}
-	
-	public void setId(String id) 
-	{
-		this.id=id; 
+
+	public void setBrand(String brand) {
+		this.brand = brand;
 	}
+
 	public String getId() {
-		return this.id; 
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	@Override
+	public String toString() {
+		return "Drive [brand=" + brand + ", id=" + id + "]";
+	}
+
+	public void brand(){
+		System.out.println("my brand");
 	}
 	
-	public void price(){
-		System.out.println("my price");
+	public void type(){
+		System.out.println("I'm Drive");
 	}
 }
